@@ -1,0 +1,7 @@
+python-telegram-bot
+discord.py
+pywhatkit
+python-dotenv
+requests
+transformers
+torch
