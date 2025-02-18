@@ -55,4 +55,4 @@ ai-multiplatform-bot
 
 ## Contributing
 
-Feel free to submit issues or pull requests if you have suggestions or improvements for the project.
+This project for my training.
