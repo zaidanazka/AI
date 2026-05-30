@@ -5,3 +5,6 @@ python-dotenv
 requests
 transformers
 torch
+flask
+flask-cors
+gunicorn
