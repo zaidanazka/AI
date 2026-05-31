@@ -1,0 +1,153 @@
+{
+  "intents": [
+
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hello", "hi", "hey", "good morning", "good afternoon", "good evening",
+        "howdy", "what's up", "sup", "greetings", "hi there", "hello there",
+        "hey there", "yo", "hiya", "how are you", "how's it going", "how do you do",
+        "nice to meet you", "whats up", "good day"
+      ],
+      "responses": [
+        "Hello! I'm AXON — your local AI assistant. What can I help you with today?",
+        "Hey there! Great to see you. Ask me anything.",
+        "Hi! I'm AXON, running fully offline on your machine. What's on your mind?",
+        "Greetings! AXON is online and ready. How can I assist you?",
+        "Hello! Nice of you to drop by. What would you like to explore today?"
+      ]
+    },
+
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye", "goodbye", "see you", "see ya", "later", "take care", "farewell",
+        "good night", "goodnight", "cya", "until next time", "catch you later",
+        "i'm leaving", "i have to go", "talk to you later", "peace out", "ttyl",
+        "signing off", "i'm done", "closing", "exit", "quit"
+      ],
+      "responses": [
+        "Goodbye! It was a pleasure. Come back anytime.",
+        "See you later! I'll be here whenever you need me.",
+        "Take care! Until next time.",
+        "Farewell! AXON signing off... for now.",
+        "Bye! Don't hesitate to return if you have more questions."
+      ]
+    },
+
+    {
+      "tag": "identity",
+      "patterns": [
+        "who are you", "what are you", "what's your name", "tell me about yourself",
+        "introduce yourself", "what do i call you", "are you a bot", "are you ai",
+        "are you human", "are you real", "what kind of ai are you", "who made you",
+        "who built you", "who created you", "what is your name", "your name",
+        "what are you called", "tell me your name", "describe yourself"
+      ],
+      "responses": [
+        "I'm AXON — a lightweight AI assistant built from scratch using Python, Flask, and a custom Bag-of-Words NLP engine. No cloud. No external APIs. Just pure local intelligence.",
+        "My name is AXON. I'm a rule-based chatbot powered by a Bag-of-Words pattern matcher running 100% on your local machine.",
+        "I'm AXON, your offline AI companion. Built with NumPy, Flask, and a custom NLP pipeline — entirely self-contained.",
+        "Call me AXON! I was engineered from scratch — no OpenAI, no Gemini, no Ollama. Just Python doing its thing locally."
+      ]
+    },
+
+    {
+      "tag": "capabilities",
+      "patterns": [
+        "what can you do", "what are your capabilities", "how can you help",
+        "what do you know", "help me", "help", "what are you good at",
+        "what can i ask you", "show me what you can do", "your features",
+        "what are your features", "what topics do you cover", "what can you talk about",
+        "can you help me", "are you helpful", "what skills do you have",
+        "list your features", "what do you offer", "capabilities"
+      ],
+      "responses": [
+        "I can hold conversations, answer questions about myself, tell jokes, discuss the time and weather limitations, and keep a log of our chats as a training dataset. I run 100% offline!",
+        "Here's what I do: natural language understanding via Bag-of-Words, intent classification, smart fallback handling, and I automatically log every conversation to help me improve over time.",
+        "I'm great at chatting! Ask me who I am, request a joke, say hello or goodbye, ask about my capabilities — and every conversation we have gets saved locally to train a better version of me.",
+        "My core skills: intent recognition, pattern matching, response generation, and conversation logging. I learn from every chat by saving our dialogue to 'collected_dataset.txt'."
+      ]
+    },
+
+    {
+      "tag": "jokes",
+      "patterns": [
+        "tell me a joke", "joke", "make me laugh", "say something funny",
+        "funny", "humor me", "got any jokes", "know any jokes", "give me a joke",
+        "i want to laugh", "entertain me", "be funny", "crack a joke",
+        "tell a joke", "do you know jokes", "can you be funny", "say a joke",
+        "make me smile", "something humorous"
+      ],
+      "responses": [
+        "Why don't scientists trust atoms? Because they make up everything! 😄",
+        "I told my computer I needed a break. Now it won't stop sending me Kit-Kat ads. 😂",
+        "Why do programmers prefer dark mode? Because light attracts bugs! 🐛",
+        "How many programmers does it take to change a light bulb? None — that's a hardware problem! 💡",
+        "A SQL query walks into a bar, walks up to two tables and asks... 'Can I JOIN you?' 🍻",
+        "I would tell you a joke about UDP, but you might not get it. 😏",
+        "Why was the JavaScript developer sad? Because he didn't Node how to Express himself. 🟨"
+      ]
+    },
+
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thank you", "thanks", "thank you so much", "thanks a lot", "appreciate it",
+        "many thanks", "thx", "ty", "great thanks", "cheers", "much appreciated",
+        "you're helpful", "that was helpful", "good answer", "nice answer",
+        "well done", "great job", "awesome", "perfect", "excellent"
+      ],
+      "responses": [
+        "You're very welcome! Happy to help anytime. 😊",
+        "Glad I could help! Feel free to ask anything else.",
+        "Anytime! That's exactly what I'm here for.",
+        "My pleasure! Is there anything else on your mind?",
+        "Thanks for the kind words! It means a lot to a local AI. 🤖"
+      ]
+    },
+
+    {
+      "tag": "weather",
+      "patterns": [
+        "what's the weather", "weather today", "is it raining", "will it rain",
+        "weather forecast", "temperature outside", "what's the temperature",
+        "hot or cold", "should i bring an umbrella", "weather report",
+        "how is the weather", "is it sunny", "what's outside like", "weather"
+      ],
+      "responses": [
+        "I'm a fully offline AI — no live weather data access! Try a weather app or check weather.com for real-time info. ☀️🌧️",
+        "Weather is outside my offline capabilities — literally! Your phone's weather app will serve you better here.",
+        "As a local AI with no internet, I can't fetch live weather. But I hear checking outside the window is surprisingly effective! 😄"
+      ]
+    },
+
+    {
+      "tag": "time_date",
+      "patterns": [
+        "what time is it", "what's the time", "current time", "what day is it",
+        "what's today's date", "today's date", "what year is it", "what month is it",
+        "tell me the time", "do you know the time", "date today", "day today",
+        "time now", "current date"
+      ],
+      "responses": [
+        "I don't carry a real-time clock, but your device does! Check the corner of your screen. ⏰",
+        "Time flies when you're chatting with AI! Your system clock has the exact time and date. 📅",
+        "As an offline AI, I don't track live time. Your phone or PC will have the accurate answer!"
+      ]
+    },
+
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "Hmm, I'm not quite sure what you mean. Could you rephrase that?",
+        "That's outside my current understanding. Try asking something else!",
+        "My pattern matcher drew a blank on that one. 🤔 Ask me about who I am, jokes, or what I can do!",
+        "I don't have a confident match for that. Maybe try a different phrasing?",
+        "Interesting input! But I'm stumped. Every unanswered question like this gets logged to help train a smarter version of me. 📝"
+      ]
+    }
+
+  ]
+}
